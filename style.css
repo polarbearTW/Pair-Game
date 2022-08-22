@@ -1,0 +1,86 @@
+body{
+    background-color: #5BAD90;
+}
+
+/* css for layout */
+.layOut {
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    color: indianred;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 100px;
+    height: 200px;
+    border: 1px solid white;
+    background: none;
+    border-radius: 10px;
+    margin: 10px;
+    /* make the flip between the front and back face of the card. */
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+/* css for both cards & answer cards */
+.front, .back {
+    position:absolute;
+    width: 100px;
+    height: 200px;
+    /* css for hiding cards & answer cards' back side (mirror contents) */
+    backface-visibility: hidden;
+    border-radius: 10px;
+    border: 1px solid wheat;
+}
+
+/* css for hiding answer cards */
+.back {
+    transform: rotateY(180deg);
+}
+
+/* class for toggle (card flip) */
+.flipcard {
+    transform: rotateY(180deg);
+}
+
+/* indivudual css for back-side cards */
+#back1 {
+    background-color: antiquewhite;
+}
+
+
+#card2 {
+    background-color: aquamarine;
+}
+
+#card3 {
+    background-color: antiquewhite;
+}
+
+#card4 {
+    background-color: aquamarine;
+}
+
+#card5 {
+    background-color:coral;
+}
+
+#card6 {
+    background-color:goldenrod;
+}
+
+#card7 {
+    background-color:coral;
+}
+
+#card8 {
+    background-color:goldenrod;
+}
